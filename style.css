@@ -1,94 +1,91 @@
-*
-{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body
-{
+    }
+    body{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #337fa5;
-}
-.clock
-{
-  width: 350px;
-  height: 350px;  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url(clock.png);
-  background-size: cover;
-  border: 4px solid #296f8f;
-  border-radius: 50%;
-  box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.527),
-                inset 0 -15px 15px rgba(255, 255, 255, 0.322),
-                 0 15px 15px rgba(0, 0, 0, 0.3),
-                inset 0 15px 15px rgba(126, 98, 98, 0.322);
-}
-.clock::before
-{
+    background: #C70039;
+    }
+    
+    .clock{
+    width: 450px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #344030 url(clock.png);
+    background-size: cover;
+    border-radius: 50%;
+    border: 20px solid #fff;
+    box-shadow: inset 0 0 30px rgba(0,0,0,.1),0 20px 20px rgba(0,0,0,0.2),
+    0 0 0 4px rgba(255,255,255,1);
+    
+    }
+    
+    .clock::before {
     content: '';
     position: absolute;
     width: 15px;
     height: 15px;
-    background: #fff;
+    background: #848484;
+    z-index: 1;
     border-radius: 50%;
-    z-index: 10000;
-}
-.hour, .min, .sec
-{
+    
+    }
+    .hour, .min, .sec{
     position: absolute;
-
-}
-.hour, .hr
-{
-    width: 160px;
-    height: 160px;
-}
-.min, .mn
-{
-    width: 190px;
-    height: 190px;
-}
-.sec, .sc
-{
+    }
+    
+    .hour, .hr{
     width: 230px;
     height: 230px;
-}
-.hr, .mn, .sc
-{
+    }
+    .min, .mn{
+    width: 300px;
+    height: 300px;
+    }
+    .sec, .sc{
+    width: 320px;
+    height: 320px;
+    }
+    .hr, .mn, .sc{
     display: flex;
     justify-content: center;
     position: absolute;
     border-radius: 50%;
-}
-.hr::before{
+    }
+    
+    .hr::before{
     content: '';
     position: absolute;
     width: 8px;
-    height: 80px;
-    background: #10ff38;
-    z-index: 10;
+    height: 120px;
+    background: #848484;
+    z-index: 10px;
     border-radius: 6px 6px 0 0;
-}
-.mn::before{
+    
+    }
+    .mn::before{
     content: '';
     position: absolute;
     width: 4px;
-    height: 90px;
-    background: #fff;
-    z-index: 11;
+    height: 150px;
+    background: #d6d6d6;
+    z-index: 11px;
     border-radius: 6px 6px 0 0;
-}
-.sc::before{
+    
+    }
+    .sc::before{
     content: '';
     position: absolute;
     width: 2px;
-    height: 150px;
-    background: #fff;
-    z-index: 12;
+    height: 205px;
+    background: #ff6767;
+    z-index: 12px;
     border-radius: 6px 6px 0 0;
-}
+    
+    }
